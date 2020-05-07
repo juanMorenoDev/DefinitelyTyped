@@ -301,7 +301,7 @@ export class USB implements Adapter {
 }
 
 export class Serial implements Adapter {
-    constructor(port: number, options?: { baudRate: number; autoOpen: boolean });
+    constructor(port: string, options?: { baudRate: number; autoOpen: boolean });
 
     open(callback?: (error?: any) => void): Serial;
 
